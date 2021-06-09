@@ -1,3 +1,11 @@
 body{
-    background: #cfcf;
+    background: #ccc;
+}
+p{
+    margin: 10px 0 !important;
+}
+.container-login{
+    width: 450px;
+    margin-top: 90px;
+    text-align: center;
 }
