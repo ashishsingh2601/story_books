@@ -9,3 +9,8 @@ p{
     margin-top: 90px;
     text-align: center;
 }
+.sidenav-heading{
+    margin-left: 21px !important;
+    color: black !important;
+    font-weight: bold !important;
+}
