@@ -8,6 +8,7 @@ const passport = require('passport');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
 const connectDB = require('./config/db');
+// const bodyparser = require('body-parser');
 
 
 //loading config file
@@ -20,6 +21,11 @@ require('./config/passport')(passport);
 connectDB();
 
 const app = express();
+
+//body parser
+app.use(express.urlencoded({ extended: false}));
+app.use(express.json());
+
 
 //logging in
 if(process.env.NODE_ENV === 'development'){
@@ -47,6 +53,7 @@ app.use(passport.session());
 //routes
 app.use('/', require('./routes/index'));
 app.use('/auth', require('./routes/auth'));
+app.use('/stories', require('./routes/stories'));
 
 //static folder
 app.use(express.static(path.join(__dirname, 'public')));
