@@ -11,9 +11,23 @@ p{
 }
 .sidenav-heading{
     margin-left: 21px !important;
-    color: black !important;
+    color: #fff !important;
     font-weight: bold !important;
 }
 .head-section{
-    background-color: #ccc !important;
+    background: linear-gradient(90deg, rgb(20, 190, 220), rgb(5, 130, 247)) !important;
+}
+.g-navbar{
+    background: linear-gradient(90deg, rgb(20, 190, 220), rgb(5, 130, 247));
+}
+.fa-small{
+    font-size: 18px !important;
+}
+.btn-float{
+    float: left;
+    margin-right: 12px;
+}
+.img-small{
+    width: 180px;
+    height: auto;
 }
